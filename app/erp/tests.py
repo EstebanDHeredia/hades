@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from .models import Type
+from .models import Type, Category
 
 # Create your tests here.
 
@@ -24,3 +24,5 @@ print(t)
 
 t = Type.objects.filter(name__startswith = "se")
 print(t)
+
+print(Category.objects.all())
